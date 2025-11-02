@@ -1,0 +1,85 @@
+.container-fluid{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('landscapecity.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;         
+  background-position: center;    
+  background-attachment: fixed;  
+  image-rendering: crisp-edges;
+}
+
+.carousel-item img{
+  width:700px;
+  height:700px;
+  justify-content: center;
+  display:flex;
+ 
+
+}
+
+
+main {
+    padding: 1.5rem;
+    background-color:transparent;
+
+}
+.content {
+    display:flex;
+    flex-direction:column;
+    gap: 1.5rem;
+    
+}
+.text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+    background-color: rgba(240, 248, 255, 0.4); /* aliceblue but 40% transparent */
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    height: auto;
+    max-width: 100%;
+    width: 80%; /* a bit more natural size */
+    box-shadow: 0 4px 10px rgba(2, 9, 58, 0.4);
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+
+.card img {
+  width: 100%;           /* fill the width of its column */
+  aspect-ratio: 1 / 1;   /* keeps it perfectly square */
+  object-fit: cover;     /* crop to fill square without distortion */
+  border-radius: 8px;    /* optional: smooth edges */
+  
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.6); /* white but 60% transparent */
+  backdrop-filter: blur(5px); /* adds glass-like blur */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+    
